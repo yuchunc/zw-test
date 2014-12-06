@@ -1,2 +1,44 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+
+/**** Sidebar ****/
+#mobile-logo {
+  background-image: url('../images/logo.png');
+  background-size: cover;
+}
+
+.b0 {
+  display: block;
+  height: 100px;
+  background: $base0;
+}
+.b1 {
+  height: 100px;
+  display: block;
+  background: $base1;
+}
+.b2 {
+  height: 100px;
+  display: block;
+  background: $base2;
+}
+.b3 {
+  height: 100px;
+  display: block;
+  background: $base3;
+}
+.b4 {
+  height: 100px;
+  display: block;
+  background: $base4;
+}
+.b0 {
+  height: 100px;
+  display: block;
+  background: $base0;
+}
+.b0 {
+  height: 100px;
+  display: block;
+  background: $base0;
+}

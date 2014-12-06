@@ -1,13 +1,30 @@
 {% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
 {% include head.html %}
 <body {% if page.body_id %} id="{{ page.body_id }}" {% endif %} {% if page.sidebar == false %} class="no-sidebar" {% endif %} {% if page.sidebar == 'collapse' or site.sidebar == 'collapse' %} class="collapse-sidebar sidebar-footer" {% endif %}>
-  <nav role="navigation">{% include navigation.html %}</nav>
-  <div id="main">
-    <div id="content">
-      {{ content | expand_urls: root_url }}
+  <div class="ui left sidebar">
+    <div id="mobile-logo">
+      <h2>真舞會館</h2>
+
     </div>
   </div>
-  <footer role="contentinfo">{% include footer.html %}</footer>
+  <div class="pusher">
+    <div class="b0"></div>
+    <div class="b1"></div>
+    <div class="b2"></div>
+
+    <div class="b3"></div>
+
+    <div class="b4"></div>
+
+    <div>
+    <nav role="navigation">{% include navigation.html %}</nav>
+    <div id="main">
+      <div id="content">
+        {{ content | expand_urls: root_url }}
+      </div>
+    </div>
+    <footer role="contentinfo">{% include footer.html %}</footer>
+  </div>
   {% include after_footer.html %}
 </body>
 </html>
