@@ -5,41 +5,19 @@
 
 
 /**** Sidebar ****/
-.sidebar {
+.vertical.sidebar.menu {
   background-color: $base1;
 
   #logo {
     // background-image: url('../images/logo.png');
     background-size: cover;
+    height: 100px;
+    margin-bottom: 150px;
+  }
 
-    img {
-      z-index: 2;
-    }
+  a {
+    color: $base4;
   }
 }
 
-.b0 {
-  display: block;
-  height: 100px;
-  background: $base0;
-}
-.b1 {
-  height: 100px;
-  display: block;
-  background: $base1;
-}
-.b2 {
-  height: 100px;
-  display: block;
-  background: $base2;
-}
-.b3 {
-  height: 100px;
-  display: block;
-  background: $base3;
-}
-.b4 {
-  height: 100px;
-  display: block;
-  background: $base4;
-}
+
