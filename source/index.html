@@ -1,20 +1,8 @@
-{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
-{% include head.html %}
-<body {% if page.body_id %} id="{{ page.body_id }}" {% endif %} {% if page.sidebar == false %} class="no-sidebar" {% endif %} {% if page.sidebar == 'collapse' or site.sidebar == 'collapse' %} class="collapse-sidebar sidebar-footer" {% endif %}>
-  {% include mobile_nav.html %}
-  <div class="pusher">
-    <div id="main">
-      <div id="content">
-        {{ content | expand_urls: root_url }}
-      </div>
-    </div>
-    <footer role="contentinfo">{% include footer.html %}</footer>
-  </div>
-  {% include after_footer.html %}
-</body>
-</html>
+---
+layout: default
+---
+<div id="homepage">
 
-<div id="homepage" class="blog-index">
   {% assign index = true %}
   {% for post in paginator.posts %}
   {% assign content = post.content %}
@@ -22,13 +10,5 @@
       {% include article.html %}
     </article>
   {% endfor %}
-  <div class="pagination">
-    {% if paginator.next_page %}
-      <a class="prev" href="{{paginator.next_page_path}}">&larr; Older</a>
-    {% endif %}
-    <a href="/blog/archives">Blog Archives</a>
-    {% if paginator.previous_page %}
-    <a class="next" href="{{paginator.previous_page_path}}">Newer &rarr;</a>
-    {% endif %}
-  </div>
+
 </div>
