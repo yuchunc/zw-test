@@ -2,18 +2,11 @@
 layout: default
 body_id: homepage
 ---
-<div id="home_content">
 
-  <a href="#" class="ui huge black start button">關於真武</a>
-
-
-  {% comment %}
-    {% assign index = true %}
-    {% for post in paginator.posts %}
-    {% assign content = post.content %}
-      <article>
-        {% include article.html %}
-      </article>
-    {% endfor %}
-  {% endcomment %}
-</div>
+{% include home_section.html %}
+{% include about_section.html %}
+{% include location_section.html %}
+{% include memoria_section.html %}
+{% include coach_section.html %}
+{% include schedule_section.html %}
+{% include contact_section.html %}

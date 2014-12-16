@@ -1,0 +1,15 @@
+<section id="home_section" class="ui segment">
+
+  <a href="#" id="start" class="ui huge black button">關於真武</a>
+
+
+  {% comment %}
+    {% assign index = true %}
+    {% for post in paginator.posts %}
+    {% assign content = post.content %}
+      <article>
+        {% include article.html %}
+      </article>
+    {% endfor %}
+  {% endcomment %}
+</section>
