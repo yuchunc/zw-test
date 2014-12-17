@@ -1,14 +1,10 @@
-<section id="home" class="ui middle aligned page grid">
-  <div class="row">
-    <div class="center aligned column">
-      <div id="center" class="ui circular segment">
-
-        <h1>真武會館</h1>
-        <a href="#" class="ui huge black button">關於真武</a>
-      </div>
+<section id="home" class="ui one column center aligned grid">
+  <div class="column">
+    <div id="centered">
+      <h1>真武會館</h1>
+      <a href="#" id="mobile_menu" class="ui huge black button">關於真武</a>
     </div>
   </div>
-
 
   {% comment %}
     {% assign index = true %}
@@ -20,3 +16,11 @@
     {% endfor %}
   {% endcomment %}
 </section>
+
+<script>
+  $('#mobile_menu').click(
+    function() {
+      $('.ui.sidebar').sidebar('toggle');
+  });
+</script>
+

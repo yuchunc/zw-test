@@ -1,10 +1,18 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
 
-/* Color   */
+/* Initialization */
+#homepage {
+  background-color: $base5;
+  min-height: 100vh;
+}
 
+section {
+  min-height: 100vh;
+}
 
-/* Sidebar */
+/* Navigation */
+
 .vertical.sidebar.menu {
   background-color: $base1;
 
@@ -12,37 +20,34 @@
     // background-image: url('../images/logo.png');
     background-size: cover;
     height: 100px;
-    margin-bottom: 150px;
+    margin-bottom: 90px;
   }
 
-  a {
-    color: $base4;
+  section#navbar {
+    min-height: inherit;
+    background-color: inherit;
+
+    .item {
+      color: $base4;
+      font-size: 1.5rem;
+      line-height: 2em;
+    }
   }
 }
-
-/* Initialization */
-#homepage {
-  min-height: 100%;
-}
-
-section {
-  min-height: 100vh;
-}
-
 
 /* Home Section */
 #home {
-  background: linear-gradient(to top, #f2f2f2, transparent), url('../images/banner.jpg') no-repeat center -50px fixed;
+  background: radial-gradient(#f2f2f2, transparent),
+              url('../images/banner.jpg') no-repeat center -100px fixed;
   background-size: cover;
   margin: 0;
   // display: table-cell;
   // text-align: center;
   // vertical-align: middle;
 
-  #center {
-    margin:15em auto 0;
-    background: radial-gradient(#f2f2f2, transparent);
-    border: none;
+  #centered {
+    display: inline-block;
+    margin:16em auto 0;
   }
 
 }
