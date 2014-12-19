@@ -82,4 +82,18 @@ img {
   }
 }
 
+/* Summary Section */
+#summary {
+  img {
+    width: auto;
+    height: 89px;
+  }
 
+  h3{
+    font-size: 2em;
+  }
+  li {
+    font-size: 20px;
+    line-height: 1.5em;
+  }
+}
