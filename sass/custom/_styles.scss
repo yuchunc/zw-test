@@ -74,7 +74,7 @@ img {
     font-size: 3em;
   }
 
-  .title {
+  #about_title {
     font-size: 3em;
     text-align: center;
   }
@@ -95,6 +95,14 @@ img {
 
     .image {
       margin-bottom: 2.5em;
+    }
+
+    h3{
+      font-size: 1.8em;
+    }
+    li {
+      font-size: 20px;
+      line-height: 1.2em;
     }
   }
 }
